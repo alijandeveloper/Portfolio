@@ -1,7 +1,9 @@
 /* Root CSS Variables for Theme Colors */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
     --primary-color: #e63946; /* Default Light Mode Color */
-    --background-color: #f0f2f5;
+    --background-color: #e4e9f0;
     --text-color: #333;
 }
 
@@ -21,11 +23,11 @@ body.dark-mode {
 body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #F4F6FF;
 }
 
 .top-bar {
-    padding: 10px;
+    padding: 30px;
     text-align: left;
 }
 
@@ -119,10 +121,6 @@ body {
     margin-right: 20px; /* Space between text and image */
 }
 
-
-
-
-
 /* Image Section */
 .image-section {
     flex: 1;
@@ -131,12 +129,47 @@ body {
 
 /* Image Styling */
 .image-section img {
-    width: 200px;
-    height: 270px;
-    border-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: 3px solid var(--primary-color);
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+}
+
+.image-section {
+    position: relative;
+    display: inline-block;
+}
+
+.image-section img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px; /* Optional for rounded corners */
+    position: relative;
+    z-index: 1;
+}
+
+.image-section::before,
+.image-section::after {
+    content: "";
+    position: absolute;
+    border: 4px solid var(--primary-color); /* Adjust color and width */
+    z-index: 2;
+}
+
+/* Top-left and bottom-right corners */
+.image-section::before {
+    top: -15px;
+    left: 50px;
+    border-width: 5px 0 0 5px; /* Top-left border */
+    width: 30px;
+    height: 30px;
+}
+
+.image-section::after {
+    bottom: -15px;
+    right: 50px;
+    border-width: 0 5px 5px 0; /* Bottom-right border */
+    width: 30px;
+    height: 30px;
 }
 
 /* Button Styling */
@@ -180,11 +213,11 @@ body {
     cursor: pointer;
 }
 
-.color.red { background-color: #e63946; }
-.color.orange { background-color: #f4a261; }
-.color.blue { background-color: #2a9d8f; }
-.color.green { background-color: #2b9348; }
-.color.purple { background-color: #6a4c93; }
+.color.red { background-color: #ff3546; }
+.color.orange { background-color: #ff9034; }
+.color.blue { background-color: #356dd6; }
+.color.green { background-color: #2cc457; }
+.color.purple { background-color: #a537ff; }
 
 .color-options.hidden {
     display: none;
@@ -200,6 +233,7 @@ body.dark-mode {
 .title {
     font-size: 2em;
     font-weight: bold;
+    font-family: "Merriweather", serif;
     /* color: var(--primary-color); */
 }
 
@@ -211,7 +245,10 @@ body.dark-mode {
      color: var(--primary-color); 
 }
 
-
+.text-section .description {
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -232,12 +269,8 @@ body.dark-mode {
 
 /* Image Styling */
 .image-section img {
-    width: 200px;
-    border-radius: 10px;
-    height: 270px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: 3px solid var(--primary-color);
+    width: 250px;
+    height: 300px;
 }
 
 /* Button Styling */

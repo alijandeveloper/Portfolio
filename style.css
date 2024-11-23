@@ -1,6 +1,6 @@
-/* Root CSS Variables for Theme Colors */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+/* Root CSS Variables for Theme Colors */
 :root {
     --primary-color: #e63946; /* Default Light Mode Color */
     --background-color: #e4e9f0;
@@ -19,13 +19,6 @@ body.dark-mode {
     --background-color: #1e1e1e;
     --text-color: #f0f2f5;
     --sidebar-bg-color: #141414; /* Dark background */
-}
-
-/* Basic Styles */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #F4F6FF;
 }
 
 .top-bar {
@@ -55,8 +48,12 @@ body {
     transition: 0.5s;
     padding-top: 60px;
     box-sizing: border-box;
+    text-align: center;
 }
-
+.sidebar li {
+    text-align: center;
+    align-items: center;
+}
 .sidebar img {
     width: 100%;
     height: auto;
@@ -73,8 +70,61 @@ body {
     display: flex;
     align-items: center;
 }
+/* Sidebar Links Styling */
+.sidebar-links {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 
-.sidebar ul li a.active {
+.sidebar-links li {
+    margin: 20px 0;
+    position: relative;
+}
+
+.sidebar-links a {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar-links a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 20px;
+    
+}
+
+.sidebar-links a:hover {
+    color: var(--primary-color);
+}
+
+.sidebar-links li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+    margin-top: 5px;
+}
+
+.sidebar-links a:hover + li::after,
+.sidebar-links a:hover::after {
+    width: 100%;
+}
+
+/* Adjust active link */
+.sidebar-links a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.sidebar-links a.active {
     color: var(--primary-color);
     font-weight: bold;
 }

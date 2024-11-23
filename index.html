@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="open-btn" onclick="toggleSidebar()">☰</button>
+    </div>
+
+    <!-- Sidebar with Close Button -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <img src="your-image.jpg" alt="Image" class="sidebar-image">
+        <ul>
+            <li><a href="#home" data-page="home" onclick="setActivePage(this)">Home <i class="icon">🏠</i></a></li>
+            <li><a href="#about" data-page="about" onclick="setActivePage(this)">About <i class="icon">📖</i></a></li>
+            <li><a href="#services" data-page="services" onclick="setActivePage(this)">Services <i class="icon">⚙️</i></a></li>
+            <li><a href="#portfolio" data-page="portfolio" onclick="setActivePage(this)">Portfolio <i class="icon">💼</i></a></li>
+            <li><a href="#contact" data-page="contact" onclick="setActivePage(this)">Contact <i class="icon">📞</i></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar with Theme Options -->
+        <div class="theme-colors">
+            <span class="theme-toggle-icon">🎨</span>
+            <div class="color-options hidden">
+                <span class="color red" data-color="#e63946"></span>
+                <span class="color orange" data-color="#f4a261"></span>
+                <span class="color blue" data-color="#2a9d8f"></span>
+                <span class="color green" data-color="#2b9348"></span>
+                <span class="color purple" data-color="#6a4c93"></span>
+            </div>
+            <!-- Dark Mode Toggle Icon -->
+            <span class="dark-mode-toggle">🌙</span>
+        </div>
+
+        <!-- Content -->
+        <div class="container">
+            <!-- Content Section -->
+            <div class="content">
+                <div class="text-section">
+                    <h1>Hi, I am <span class="name">Ajit Prasad.</span></h1>
+                    <p class="title"><span class="static">I’m a</span> <span id="dynamic-title"></span></p>
+                    <p class="description">
+                        I’m a skilled website and UI designer with expertise in creating custom platforms, including dead stock websites, blending creativity and precision for visually appealing and functional digital solutions.
+                    </p>
+                    <button class="download-cv">Download CV</button>
+                </div>
+                <div class="image-section">
+                    <img src="img/WhatsApp Image 2024-09-09 at 01.56.36_37200c71.jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+        
+
+    <script src="script.js"></script>
+</body>
+</html>

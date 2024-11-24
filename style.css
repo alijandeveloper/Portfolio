@@ -368,6 +368,7 @@ body.dark-mode {
 
 /* Button Styling */
 .download-cv {
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: #fff;
@@ -378,4 +379,97 @@ body.dark-mode {
 
 .download-cv:hover {
     opacity: 0.8;
+}
+
+/* about */
+
+.about-container {
+    max-width: 1024px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between intro and the table */
+}
+
+.about-heading {
+    font-size: 2.25rem; /* 36px */
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: "Merriweather", serif;
+    margin-bottom: 8px; /* Add space between heading and lines */
+}
+
+.about-line-container {
+    display: flex;
+    flex-direction: column;  /* Stack the lines vertically */
+    gap: 4px;  /* Add space between the lines */
+}
+
+.about-line {
+    width: 8%;  /* Adjust the width of the lines */
+    border-top: 6px solid var(--primary-color);  /* Line styling */
+}
+.about-line2 {
+    width: 5%;  /* Adjust the width of the lines */
+    border-top: 4px solid var(--primary-color);  /* Line styling */
+}
+
+/* Intro styles */
+.about-intro-container {
+    text-align: center;
+}
+
+.about-intro {
+    font-size: 1.15rem;
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+}
+
+.about-intro span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.about-description {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: "Merriweather", serif;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Table styles with three columns */
+.info-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Space between columns */
+    margin-top: 20px;
+    text-align: left;
+   
+}
+
+.info-column {
+    background-color: var(--background-color); /* Optional background for columns */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--primary-color); /* Optional shadow for style */
+  
+}
+
+.info-column p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.info-column p strong {
+    color: var(--primary-color); /* Highlight labels */
+}
+@media (max-width: 768px) {
+    .info-table {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
 }

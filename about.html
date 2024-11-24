@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="open-btn" onclick="toggleSidebar()">☰</button>
+    </div>
+
+    <!-- Sidebar with Close Button -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <img src="your-image.jpg" alt="Image" class="sidebar-image">
+        <ul class="sidebar-links">
+            <li><a href="index.html" data-page="home" onclick="setActivePage(this)"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about" data-page="about" onclick="setActivePage(this)"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#services" data-page="services" onclick="setActivePage(this)"><i class="fa fa-cogs"></i> Services</a></li>
+            <li><a href="#portfolio" data-page="portfolio" onclick="setActivePage(this)"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#contact" data-page="contact" onclick="setActivePage(this)"><i class="fa fa-envelope"></i> Contact</a></li>
+        </ul>        
+    </div>
+
+    <div class="container">
+        <!-- Sidebar with Theme Options -->
+        <div class="theme-colors">
+            <span class="theme-toggle-icon">🎨</span>
+            <div class="color-options hidden">
+                <span class="color red" data-color="#ff3546"></span>
+                <span class="color orange" data-color="#ff9034"></span>
+                <span class="color blue" data-color="#356dd6"></span>
+                <span class="color green" data-color="#2cc457"></span>
+                <span class="color purple" data-color="#a537ff"></span>
+            </div>
+            <!-- Dark Mode Toggle Icon -->
+            <span class="dark-mode-toggle">🌙</span>
+        </div>
+
+        <div class="about-container">
+            <!-- Heading -->
+            <h1 class="about-heading">About Me</h1>
+        
+            <!-- Two small lines -->
+            <div class="about-line-container">
+                <div class="about-line"></div>
+                <div class="about-line2"></div>
+            </div>
+        
+            <!-- Introduction -->
+            <div class="about-intro-container">
+                <p class="about-intro">
+                    I'm Ali Jan Prasad & I am a <span>Web Developer</span>
+                </p>
+                <p class="about-description">
+                    I am Ali Jan, a creative professional from Sargodha with a passion for technology and innovation. With nearly a year of experience in live stock website development, I specialize in creating user-friendly solutions. I also excel in graphic design, UI design, and video editing, crafting engaging visuals that leave a lasting impact. Dedicated to quality and creativity, I bring ideas to life with a focus on delivering exceptional results in every project.
+                </p>
+            </div>
+        
+            <!-- Info Table with Three Columns -->
+            <div class="info-table">
+                <!-- Column 1 -->
+                <div class="info-column">
+                    <p><strong>Birthday:</strong> 15th January</p>
+                    <p><strong>Social Media:</strong> @ali_jan_prasad</p>
+                    <p><strong>Degree:</strong> BA in Computer Science</p>
+                    <p><strong>City:</strong> Sargodha</p>
+                </div>
+                <!-- Column 2 -->
+                <div class="info-column">
+                    <p><strong>Age:</strong> 23</p>
+                    <p><strong>Email:</strong> ali.jan@example.com</p>
+                    <p><strong>Phone:</strong> +92-123-4567890</p>
+                    <p><strong>Freelancer:</strong> Available</p>
+                </div>
+                <!-- Column 3 -->
+                <div class="info-column">
+                    <p><strong>Graphic Design:</strong> 85%</p>
+                    <p><strong>Video Editing:</strong> 90%</p>
+                    <p><strong>UI Design:</strong> 80%</p>
+                    <p><strong>Web Development:</strong> 95%</p>
+                </div>
+            </div>
+        </div>        
+
+    <script src="script.js"></script>
+</body>
+</html>

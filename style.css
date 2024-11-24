@@ -500,9 +500,8 @@ body.dark-mode {
     }
 }
 
-/* From Uiverse.io by zjssun */ 
 .button {
-  margin-top: 30px;
+  margin: 30px;
   width: 100px;
   position: relative;
   padding: 10px 22px;
@@ -595,4 +594,49 @@ body.dark-mode {
       110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
+}
+/* General styling for the container */
+.containerex {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 10px, 20px;
+    font-family: "Merriweather", serif;
+}
+
+/* Styling for Education and Experience sections */
+.education, .experience {
+    width: 50%;  /* Each section takes up 45% of the container */
+}
+
+/* Heading style */
+.heading {
+    font-size: 1.5rem; /* Larger font size for headings */
+    font-weight: 600;   /* Bold weight for headings */
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+/* Box styling */
+.box {
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 4px;
+    background-color: var(--background-color);
+}
+
+/* Styling for the year and role titles */
+.year, .degree, .role {
+    font-weight: bold;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+/* Styling for the details (description) */
+.details {
+    margin-top: 5px;
+    font-size: 12px;
+    word-spacing: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

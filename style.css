@@ -705,3 +705,77 @@ body.dark-mode {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* portfolio */
+/* Portfolio Container */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns in each row */
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Portfolio Item */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.portfolio-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;  /* 1 column on small screens */
+    }
+}
+/* From Uiverse.io by ernestnash */ 
+.btn {
+    margin: 40px 0;
+    align-self: center;
+    display: inline-block;
+    width: 100px;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color);
+    border: 3px solid var(--primary-color);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+   }
+   
+   .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+   .btn:hover::before {
+    transform: translateX(0);
+   }

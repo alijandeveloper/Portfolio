@@ -779,3 +779,87 @@ body.dark-mode {
    .btn:hover::before {
     transform: translateX(0);
    }
+
+
+
+
+/* Contact Container */
+
+.send-mail-btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.about-intro2 {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+.about-description2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Contact Container */
+.contact-container {
+    width: 96%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+}
+
+/* Contact Row Styling */
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap; /* Wraps to new line if the row overflows */
+}
+
+/* Styling for each contact item */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+   
+}
+
+/* Icon Styling */
+.contact-icon {
+    font-size: 2em;
+    color: var(--primary-color); /* Icon color */
+    margin-bottom: 10px;
+}
+
+/* Contact Info Styling */
+.contact-info h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    color: var(--text-color)
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column; /* Stacks the items on smaller screens */
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
+    }
+}

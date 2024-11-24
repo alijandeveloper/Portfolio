@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="open-btn" onclick="toggleSidebar()">☰</button>
+    </div>
+
+    <!-- Sidebar with Close Button -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <img src="your-image.jpg" alt="Image" class="sidebar-image">
+        <ul class="sidebar-links">
+            <li><a href="index.html" data-page="home" onclick="setActivePage(this)"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="about.html" data-page="about" onclick="setActivePage(this)"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="services.html" data-page="services" onclick="setActivePage(this)"><i class="fa fa-cogs"></i> Services</a></li>
+            <li><a href="portfolio.html" data-page="portfolio" onclick="setActivePage(this)"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#contact" data-page="contact" onclick="setActivePage(this)"><i class="fa fa-envelope"></i> Contact</a></li>
+        </ul>        
+    </div>
+    
+    <div class="container">
+        <!-- Sidebar with Theme Options -->
+        <div class="theme-colors">
+            <span class="theme-toggle-icon">🎨</span>
+            <div class="color-options hidden">
+                <span class="color red" data-color="#ff3546"></span>
+                <span class="color orange" data-color="#ff9034"></span>
+                <span class="color blue" data-color="#356dd6"></span>
+                <span class="color green" data-color="#2cc457"></span>
+                <span class="color purple" data-color="#a537ff"></span>
+            </div>
+            <!-- Dark Mode Toggle Icon -->
+            <span class="dark-mode-toggle">🌙</span>
+        </div>
+        
+        <div>
+        <div class="about-container">
+            <!-- Heading -->
+            <h1 class="about-heading">About Me</h1>
+        
+            <!-- Two small lines -->
+            <div class="about-line-container">
+                <div class="about-line"></div>
+                <div class="about-line2"></div>
+            </div>
+        
+            <div class="services-container">
+                <!-- Service Box 1 -->
+                <div class="service-box">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h3>App Design</h3>
+                    <p>Creative app designs tailored to your needs.</p>
+                </div>
+                
+                <!-- Service Box 2 -->
+                <div class="service-box">
+                    <i class="fas fa-laptop service-icon"></i>
+                    <h3>Web Design</h3>
+                    <p>Modern and responsive web designs.</p>
+                </div>
+                
+                <!-- Service Box 3 -->
+                <div class="service-box">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Visually stunning graphics for your brand.</p>
+                </div>
+        
+                <!-- Service Box 4 -->
+                <div class="service-box">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>Web Development</h3>
+                    <p>Robust web applications using the latest tech.</p>
+                </div>
+        
+                <!-- Service Box 5 -->
+                <div class="service-box">
+                    <i class="fas fa-video service-icon"></i>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing for your content.</p>
+                </div>
+        
+                <!-- Service Box 6 -->
+                <div class="service-box">
+                    <i class="fas fa-cogs service-icon"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive UI/UX designs for seamless user experiences.</p>
+                </div>
+            </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

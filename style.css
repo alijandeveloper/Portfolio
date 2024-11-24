@@ -6,6 +6,7 @@
     --background-color: #e4e9f0;
     --text-color: #333;
     --sidebar-bg-color: #ffffff; /* Default light background */
+    --w-bg-color: #ffffff; /* Default light background */
 }
 
 body {
@@ -19,6 +20,7 @@ body.dark-mode {
     --background-color: #1e1e1e;
     --text-color: #f0f2f5;
     --sidebar-bg-color: #141414; /* Dark background */
+    --w-bg-color: #1e1e1e;
 }
 
 .top-bar {
@@ -631,4 +633,75 @@ body.dark-mode {
     font-size: 12px;
     word-spacing: 4px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* serveses */
+
+/* Container for the services */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Service Box Styling */
+.service-box {
+    background-color: var(--w-bg-color);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+/* Icon Styling */
+.service-icon {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+.service-box:hover .service-icon {
+    background-color: var(--primary-color);  /* Change this to your theme color */
+    color: white;
+}
+
+/* Heading Styling */
+.service-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+/* Description Styling */
+.service-box p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
 }

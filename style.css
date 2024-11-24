@@ -455,18 +455,44 @@ body.dark-mode {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px var(--primary-color); /* Optional shadow for style */
-  
+}
+.info-column-1 p,
+.info-column-2 p
+{
+    padding-top: 15px;
 }
 
 .info-column p {
     font-size: 14px;
     color: var(--text-color);
     margin-bottom: 10px; /* Space between rows */
+
 }
 
 .info-column p strong {
     color: var(--primary-color); /* Highlight labels */
 }
+/* Skill section */
+.skill {
+    margin-bottom: 15px;
+}
+
+/* Progress bar container */
+.progress-bar {
+    background-color: #e0e0e0; /* Light grey background for the bar */
+    height: 8px; /* Height of the progress bar */
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+/* Filled progress indicator */
+.progress {
+    background-color: var(--primary-color); /* Themed color for the progress */
+    height: 100%; /* Full height of the bar */
+    transition: width 0.5s ease; /* Smooth transition for animation */
+}
+
 @media (max-width: 768px) {
     .info-table {
         grid-template-columns: 1fr; /* Single column on smaller screens */

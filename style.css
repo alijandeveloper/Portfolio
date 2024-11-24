@@ -273,14 +273,6 @@ body.dark-mode {
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
-/* Hover Effect */
-/* .theme-toggle-icon:hover,
-.dark-mode-toggle:hover {
-    transform: scale(1.1);
-    background-color: var(--primary-color);
-    color: var(--background-color);
-} */
-
 /* Color Options Visibility */
 .color-options {
     display: flex;
@@ -619,7 +611,7 @@ body.dark-mode {
 
 /* Box styling */
 .box {
-    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 6px var(--primary-color);
     padding: 20px;
     border-radius: 4px;
     background-color: var(--background-color);

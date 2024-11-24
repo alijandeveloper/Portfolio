@@ -118,3 +118,4 @@ document.addEventListener("DOMContentLoaded", () => {
     const defaultActivePage = document.querySelector('[data-page="home"]');
     if (defaultActivePage) defaultActivePage.classList.add('active');
 });
+ 

@@ -141,20 +141,16 @@ body.dark-mode {
 }
 
 /* Adjust active link */
-.sidebar-links a.active {
+/* Highlight the active link with primary color */
+.sidebar-linksul li a.active {
     color: var(--primary-color);
     font-weight: bold;
 }
 
-.sidebar-links a.active {
-    color: var(--primary-color);
-    font-weight: bold;
-}
 
 .sidebar ul li a .icon {
     margin-left: 8px; /* Space between text and icon */
 }
-
 
 .sidebar.open {
     width: 250px;

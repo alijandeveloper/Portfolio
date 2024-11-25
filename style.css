@@ -453,10 +453,9 @@ body.dark-mode {
 }
 
 .info-column {
-    background-color: var(--background-color); /* Optional background for columns */
+    background-color: var(--w-bg-color); /* Optional background for columns */
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px var(--primary-color); /* Optional shadow for style */
 }
 .info-column-1 p,
 .info-column-2 p
@@ -621,10 +620,9 @@ body.dark-mode {
 
 /* Box styling */
 .box {
-    box-shadow: 0 4px 6px var(--primary-color);
     padding: 20px;
     border-radius: 4px;
-    background-color: var(--background-color);
+    background-color: var(--w-bg-color);
 }
 
 /* Styling for the year and role titles */

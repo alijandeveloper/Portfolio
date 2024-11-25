@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 /* Root CSS Variables for Theme Colors */
 :root {
     --primary-color: #e63946; /* Default Light Mode Color */
@@ -24,14 +24,16 @@ body.dark-mode {
 }
 
 .top-bar {
+    position: fixed;
     padding: 30px;
     text-align: left;
+   
 }
 
 .open-btn, .close-btn {
     color: var(--primary-color);
     background-color: #ffffff00;
-    font-size: 24px;
+    font-size: 30px;
     border: none;
     font-weight: bolder;
 }
@@ -56,6 +58,15 @@ body.dark-mode {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.sidebar h1 {
+    color: var(--text-color);
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+}
+.sidebar-links a.active {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 /* Sidebar Links Container */
@@ -166,7 +177,7 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding:20px;
     gap: 50px; /* Space between text and image */
 }
 
@@ -392,6 +403,7 @@ body.dark-mode {
     color: var(--text-color);
     font-family: "Merriweather", serif;
     margin-bottom: 8px; /* Add space between heading and lines */
+    margin-top: 50px;
 }
 
 .about-line-container {

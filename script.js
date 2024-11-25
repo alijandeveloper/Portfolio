@@ -119,3 +119,26 @@ document.addEventListener("DOMContentLoaded", () => {
     if (defaultActivePage) defaultActivePage.classList.add('active');
 });
  
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sidebar = document.getElementById("mySidebar");
+    const openBtn = document.getElementById("openSidebar");
+    const closeBtn = document.getElementById("closeSidebar");
+  
+    openBtn.addEventListener("click", () => {
+      sidebar.classList.add("open");
+      openBtn.style.display = "none"; // Hide open button
+      closeBtn.style.display = "block"; // Show close button
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+      openBtn.style.display = "block"; // Show open button
+      closeBtn.style.display = "none"; // Hide close button
+    });
+  
+    // Set initial state
+    closeBtn.style.display = "none";
+  });
+  
